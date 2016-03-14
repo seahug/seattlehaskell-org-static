@@ -1,12 +1,14 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
+
+module Main (main) where
+
 import           Hakyll
 
-
---------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyll hakyllMain
+
+hakyllMain :: Rules ()
+hakyllMain = do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
