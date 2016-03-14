@@ -15,9 +15,43 @@ source-repository head
   type:             git
   location:         https://github.com/seahug/seattlehaskell-org-static.git
 
+library
+  default-language: Haskell2010
+  cpp-options:      -DTEMPLATE_DIR="seattlehaskell-org/templates"
+  exposed-modules:  TemplateGen.DoIt
+  other-modules:    TemplateGen.Css
+                  , TemplateGen.Html
+                  , TemplateGen.Resource
+                  , TemplateGen.SiteInfo
+                  , TemplateGen.Templates
+                  , TemplateGen.Types
+  hs-source-dirs:   src
+  build-depends:    base == 4.*
+                  , blaze-html
+                  , bytestring
+                  , shakespeare
+                  , text
+                  , yesod-static
+
+executable templategen
+  default-language: Haskell2010
+  ghc-options:      -threaded
+  main-is:          templategen.hs
+  build-depends:    base == 4.*
+                  , blaze-html
+                  , containers
+                  , hakyll == 4.7.*
+                  , seattlehaskell-org-static
+                  , shakespeare
+
 executable site
   default-language: Haskell2010
+  cpp-options:      -DSITE_ROOT_DIR="/content"
   ghc-options:      -threaded
   main-is:          site.hs
   build-depends:    base == 4.*
+                  , blaze-html
+                  , containers
+                  , filepath
                   , hakyll == 4.7.*
+                  , shakespeare

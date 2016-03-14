@@ -1,0 +1,3 @@
+[submodule "seattlehaskell-org"]
+	path = seattlehaskell-org
+	url = https://github.com/seahug/seattlehaskell-org.git

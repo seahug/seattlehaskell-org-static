@@ -1,0 +1,6 @@
+<html>
+  <head>
+    <title>TITLE: $title$
+  <body>
+    <h1>TITLE: $title$
+    <div #content>$body$
