@@ -49,7 +49,7 @@ defaultTemplateContext :: TemplateContext
 defaultTemplateContext = TemplateContext
     title -- pageTitle
     defaultPageContext -- pc
-    (Just AboutR) -- currentRoute
+    Nothing -- currentRoute
     (\(Master s) -> s) -- appSettings
     copyrightYear -- appCopyrightYear
     copyright -- appCopyright
