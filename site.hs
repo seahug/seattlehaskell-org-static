@@ -45,6 +45,11 @@ renderExtAbsUrl = id
 renderIntRelUrl :: String -> String
 renderIntRelUrl = normalizePath . (SITE_ROOT_DIR ++)
 
+-- "#" -> "#"
+-- "#anchor" -> "#anchor"
+renderAnchorOnly :: String -> String
+renderAnchorOnly = id
+
 fixUpUrlsWith :: String -> String -> String
 fixUpUrlsWith _ = withUrls fixUpUrl
     where
@@ -52,10 +57,12 @@ fixUpUrlsWith _ = withUrls fixUpUrl
             | isIntAbs x            = renderIntAbsUrl x     -- internal absolute URL
             | isExtAbs x            = renderExtAbsUrl x     -- external absolute URL
             | isIntRel x            = renderIntRelUrl x     -- internal relative URL
+            | isAnchorOnly x        = renderAnchorOnly x    -- anchor only
             | otherwise             = "[[ERROR:" ++ x ++ "]]"
         isIntAbs = ("//" `isPrefixOf`)
         isExtAbs x = "http://" `isPrefixOf` x || "https://" `isPrefixOf` x
         isIntRel = ("/" `isPrefixOf`)
+        isAnchorOnly = ("#" `isPrefixOf`)
 
 -- BEGIN: Miscellaneous filters
 
