@@ -49,7 +49,7 @@ title: Parallel and concurrent programming in Haskell
     <a href="https://seahug-pcph.eventbrite.com/">
       Register at Eventbrite
   <li .list-group-item>
-    <a href="http://seattlehaskell.org/static/other/pcph.ics?etag=yFvoKFSf">
+    <a href="/other/pcph.ics">
       Download iCalendar file
   <li .list-group-item>
     <a href="https://github.com/seahug/pcph">

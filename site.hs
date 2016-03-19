@@ -121,7 +121,7 @@ main = hakyll hakyllMain
 
 hakyllMain :: Rules ()
 hakyllMain = do
-    match "images/*" $ do
+    match ("images/*" .||. "other/*") $ do
         route   idRoute
         compile copyFileCompiler
 
