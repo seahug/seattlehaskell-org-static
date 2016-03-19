@@ -15,8 +15,8 @@ title: Parallel and concurrent programming in Haskell
   just enough theoretical background in the language to write practical programs.
   It will be suitable for people who are new to Haskell, but some experience or
   background in programming in other languages will be assumed. Students will be
-  expected to bring their own laptops with a recent version of the Haskell
-  Platform or equivalent installed.
+  expected to bring their own laptops with a working Haskell development
+  environment. We recommend <a href="http://stackage.org/">Stack</a>.
 <ul .list-group>
   <li .list-group-item>
     The course starts Wednesday April 6th 2016 and will consist of up to ten
