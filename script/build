@@ -4,13 +4,17 @@ SCRIPTDIR=$(dirname $SCRIPTPATH)
 APPDIR=$(dirname $SCRIPTDIR)
 
 INVALIDOPT=0
-OUTDIR=
+COPYONLY=0
 CONFIG=RELEASE
 CONFIGLOWER=release
+OUTDIR=
 TEST=0
 
-while getopts "do:t" opt; do
+while getopts "cdo:t" opt; do
   case $opt in
+    c)
+      COPYONLY=1
+      ;;
     d)
       CONFIG=DEBUG
       CONFIGLOWER=debug
@@ -40,33 +44,35 @@ fi
 
 cd $APPDIR
 
-echo Cleaning
-stack clean
-if [ $? -ne 0 ]; then
-  echo Clean failed
-  exit 1
-fi
-
-echo Building
-stack build --ghc-options="-D$CONFIG"
-if [ $? -ne 0 ]; then
-  echo Build failed
-  exit 1
-fi
-
-echo Generating
-stack exec site rebuild
-if [ $? -ne 0 ]; then
-  echo Generation failed
-  exit 1
-fi
-
-if [ $TEST -eq 1 ]; then
-  echo Testing
-  diff -r _site_$CONFIGLOWER _site
+if [ $COPYONLY -ne 1 ]; then
+  echo Cleaning
+  stack clean
   if [ $? -ne 0 ]; then
-    echo Test failed
+    echo Clean failed
     exit 1
+  fi
+
+  echo Building
+  stack build --ghc-options="-D$CONFIG"
+  if [ $? -ne 0 ]; then
+    echo Build failed
+    exit 1
+  fi
+
+  echo Generating
+  stack exec site rebuild
+  if [ $? -ne 0 ]; then
+    echo Generation failed
+    exit 1
+  fi
+
+  if [ $TEST -eq 1 ]; then
+    echo Testing
+    diff -r _site_$CONFIGLOWER _site
+    if [ $? -ne 0 ]; then
+      echo Test failed
+      exit 1
+    fi
   fi
 fi
 
