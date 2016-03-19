@@ -2,7 +2,11 @@
 SCRIPTPATH=$(readlink -f $0)
 SCRIPTDIR=$(dirname $SCRIPTPATH)
 APPDIR=$(dirname $SCRIPTDIR)
-OUTDIR=/var/www/rcook/seattlehaskell.local
+
+if [[ "$OUTDIR" == "" ]]; then
+  echo Must set OUTDIR
+  exit 1
+fi
 
 cd $APPDIR
 rm -rf $OUTDIR/* && \
