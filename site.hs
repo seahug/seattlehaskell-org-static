@@ -173,7 +173,7 @@ hakyllMain = do
                     constField "title" "Home"                `mappend`
                     defaultContext
 
-            htmlPageCompiler "templates/default.html" indexCtx
+            htmlPageCompiler defaultTemplate indexCtx
 
     match "pages/*.hamlet" $ do
         route $ pagesRoute `composeRoutes` setExtension "html"
