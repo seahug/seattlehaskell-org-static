@@ -140,7 +140,7 @@ hakyllMain = do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate defaultTemplate postCtx
             >>= fixUpUrls
 
     create ["archive.html"] $ do
@@ -154,7 +154,7 @@ hakyllMain = do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+                >>= loadAndApplyTemplate defaultTemplate archiveCtx
                 >>= fixUpUrls
 
 
