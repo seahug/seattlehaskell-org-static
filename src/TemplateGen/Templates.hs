@@ -2,15 +2,15 @@
 {-# LANGUAGE TemplateHaskell #-}
 
 module TemplateGen.Templates (
-    commonCssTemplate
+    defaultCssTemplate
 ) where
 
 import qualified Text.Lucius as L
 
 #define CSS_TEMPLATE_PATH (TEMPLATE_DIR ++ "/default-layout.lucius")
-commonCssTemplate :: L.CssUrl ()
+defaultCssTemplate :: L.CssUrl ()
 #if RELEASE
-commonCssTemplate = $(L.luciusFile CSS_TEMPLATE_PATH)
+defaultCssTemplate = $(L.luciusFile CSS_TEMPLATE_PATH)
 #else
-commonCssTemplate = $(L.luciusFileDebug CSS_TEMPLATE_PATH)
+defaultCssTemplate = $(L.luciusFileDebug CSS_TEMPLATE_PATH)
 #endif
