@@ -11,17 +11,11 @@ module TemplateGen.Html (
 ) where
 
 import Data.Text
+import qualified TemplateGen.PageContext as PC
 import TemplateGen.Resource
 import TemplateGen.SiteInfo
 import TemplateGen.Types
 import Text.Hamlet
-
-data PageContext = PageContext {
-    title :: String
-}
-
-defaultPageContext :: PageContext
-defaultPageContext = PageContext "SeaHUG - $title$"
 
 data Settings = Settings {
     copyrightYear :: String,
@@ -35,8 +29,8 @@ defaultSettings = Settings "2016" "Seattle Area Haskell Users' Group" Nothing
 data Master = Master Settings
 
 data TemplateContext = TemplateContext {
-    pageTitle :: PageContext -> String,
-    pc :: PageContext,
+    pageTitle :: PC.PageContext -> String,
+    pc :: PC.PageContext,
     currentRoute :: Maybe Url,
     appSettings :: Master -> Settings,
     appCopyrightYear :: Settings -> String,
@@ -47,8 +41,8 @@ data TemplateContext = TemplateContext {
 
 defaultTemplateContext :: TemplateContext
 defaultTemplateContext = TemplateContext
-    title -- pageTitle
-    defaultPageContext -- pc
+    PC.title -- pageTitle
+    PC.mkDefault { PC.title = "SeaHUG - $title$" } -- pc
     Nothing -- currentRoute
     (\(Master s) -> s) -- appSettings
     copyrightYear -- appCopyrightYear

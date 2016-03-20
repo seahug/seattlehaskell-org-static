@@ -21,6 +21,7 @@ library
   exposed-modules:  TemplateGen.DoIt
   other-modules:    TemplateGen.Css
                   , TemplateGen.Html
+                  , TemplateGen.PageContext
                   , TemplateGen.Resource
                   , TemplateGen.SiteInfo
                   , TemplateGen.Templates
