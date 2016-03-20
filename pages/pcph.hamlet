@@ -24,31 +24,32 @@ title: Parallel and concurrent programming in Haskell
 <ul .list-group>
   <li .list-group-item>
     The course starts Wednesday April 6th 2016 and will consist of up to ten
-    sessions<br/>
+    sessions, each of which will consist roughly of two 45-minute halves with
+    a break in between<br/>
     <button data-toggle="collapse" data-target="#sessions">
       Show/hide all dates
     <div #sessions .collapse>
       <ul .list-unstyled>
         <li>
-          Wednesday April 6th 2016, 6:30pm-9:00pm
+          Wednesday April 6th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday April 13th 2016, 6:30pm-9:00pm
+          Wednesday April 13th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday April 20th 2016, 6:30pm-9:00pm
+          Wednesday April 20th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday April 27th 2016, 6:30pm-9:00pm
+          Wednesday April 27th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday May 4th 2016, 6:30pm-9:00pm
+          Wednesday May 4th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday May 11th 2016, 6:30pm-9:00pm
+          Wednesday May 11th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday May 18th 2016, 6:30pm-9:00pm
+          Wednesday May 18th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday May 25th 2016, 6:30pm-9:00pm
+          Wednesday May 25th 2016, 6:30pm-8:30pm
         <li>
-          Wednesday June 1st 2016, 6:30pm-9:00pm
+          Wednesday June 1st 2016, 6:30pm-8:30pm
         <li>
-          Wednesday June 8th 2016, 6:30pm-9:00pm
+          Wednesday June 8th 2016, 6:30pm-8:30pm
   <li .list-group-item>
     <a href="https://seahug-pcph.eventbrite.com/">
       Register at Eventbrite
