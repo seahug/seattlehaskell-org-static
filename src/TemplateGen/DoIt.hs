@@ -10,7 +10,7 @@ import qualified Data.Text as DT
 import qualified TemplateGen.Css as C
 import qualified TemplateGen.Hash as H
 import qualified TemplateGen.PageContext as PC
-import           TemplateGen.Resource
+import qualified TemplateGen.Resource as R
 import qualified TemplateGen.Settings as S
 import qualified TemplateGen.SiteInfo as SI
 import qualified TemplateGen.TemplateContext as TC
@@ -31,15 +31,15 @@ renderHtmlUrl :: Show a => SI.SiteInfo -> U.Url -> a -> DT.Text
 renderHtmlUrl _ U.AboutR _ = "//about"    -- an internal absolute URL
 renderHtmlUrl _ U.HomeR _ = "//"          -- an internal absolute URL
 
-readResources :: FilePath -> [FilePath] -> IO [Resource]
+readResources :: FilePath -> [FilePath] -> IO [R.Resource]
 readResources dir = mapM $ \x ->
     let relativePath = dir ++ "/" ++ x
     in readResource (staticFilePath relativePath) (staticUrl relativePath)
     where
-        readResource :: FilePath -> US.UrlString -> IO Resource
+        readResource :: FilePath -> US.UrlString -> IO R.Resource
         readResource path url = do
             bs <- BSL.readFile path
-            return $ Resource url (Just $ H.Hash (base64md5 bs))
+            return $ R.Resource url (Just $ H.Hash (base64md5 bs))
         staticFilePath :: FilePath -> FilePath
         staticFilePath path = "seattlehaskell-org/static/" ++ path
         staticUrl :: FilePath -> US.UrlString
@@ -57,10 +57,10 @@ localScriptFileNames = ["bootstrap.min.js", "ie10-viewport-bug-workaround.js"]
 -- End of configuration
 
 -- Internal absolute URL
-getAutogenCssResource :: IO Resource
-getAutogenCssResource = do
+mkDefaultCssResource :: IO R.Resource
+mkDefaultCssResource = do
     let (_, hash) = C.generateDefaultCss
-    return $ Resource ("//static/tmp/autogen-" ++ H.toString hash ++ ".css") Nothing
+    return $ R.Resource ("//static/tmp/autogen-" ++ H.toString hash ++ ".css") Nothing
 
 generateHtmlTemplateFile :: SI.SiteInfo -> IO ()
 generateHtmlTemplateFile si = do
@@ -74,13 +74,13 @@ generateHtmlTemplateFile si = do
 doIt :: IO ()
 doIt = do
     localStylesheets <- readResources "css" localStylesheetFileNames
-    let externalScripts = map (`Resource` Nothing) externalScriptUrls
+    let externalScripts = map (`R.Resource` Nothing) externalScriptUrls
     localScripts <- readResources "js" localScriptFileNames
     let scripts = externalScripts ++ localScripts
 
-    commonCssResource <- getAutogenCssResource
+    defaultStylesheet <- mkDefaultCssResource
 
     let
-        stylesheets = localStylesheets ++ [commonCssResource]
+        stylesheets = localStylesheets ++ [defaultStylesheet]
         siteInfo = SI.SiteInfo stylesheets scripts
     generateHtmlTemplateFile siteInfo
