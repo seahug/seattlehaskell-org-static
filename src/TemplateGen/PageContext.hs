@@ -1,7 +1,6 @@
 module TemplateGen.PageContext (
-    PageContext
+    PageContext(..)
   , mkPageContext
-  , title
 ) where
 
 data PageContext = PageContext {

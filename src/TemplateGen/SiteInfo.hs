@@ -2,9 +2,9 @@ module TemplateGen.SiteInfo (
     SiteInfo(..)
 ) where
 
-import TemplateGen.Resource
+import qualified TemplateGen.Resource as R
 
 data SiteInfo = SiteInfo {
-    siteInfoStylesheets :: [Resource],
-    siteInfoScripts :: [Resource]
+    stylesheets :: [R.Resource],
+    scripts :: [R.Resource]
 }

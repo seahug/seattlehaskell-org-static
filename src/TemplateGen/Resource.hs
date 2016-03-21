@@ -3,10 +3,11 @@ module TemplateGen.Resource (
   , fullUrl
 ) where
 
-import TemplateGen.Types
+import qualified TemplateGen.Hash as H
+import qualified TemplateGen.UrlString as UL
 
-data Resource = Resource UrlString (Maybe Hash) deriving Show
+data Resource = Resource UL.UrlString (Maybe H.Hash) deriving Show
 
-fullUrl :: Resource -> UrlString
+fullUrl :: Resource -> UL.UrlString
 fullUrl (Resource url Nothing) = url
-fullUrl (Resource url (Just (Hash s))) = url ++ "?etag=" ++ s
+fullUrl (Resource url (Just (H.Hash s))) = url ++ "?etag=" ++ s

@@ -20,12 +20,17 @@ library
   cpp-options:      -DTEMPLATE_DIR="seattlehaskell-org/templates"
   exposed-modules:  TemplateGen.DoIt
   other-modules:    TemplateGen.Css
+                  , TemplateGen.Hash
                   , TemplateGen.Html
+                  , TemplateGen.Master
                   , TemplateGen.PageContext
                   , TemplateGen.Resource
+                  , TemplateGen.Settings
                   , TemplateGen.SiteInfo
+                  , TemplateGen.TemplateContext
                   , TemplateGen.Templates
-                  , TemplateGen.Types
+                  , TemplateGen.Url
+                  , TemplateGen.UrlString
   hs-source-dirs:   src
   build-depends:    base == 4.*
                   , blaze-html

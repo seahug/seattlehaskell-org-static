@@ -5,50 +5,19 @@
 {-# LANGUAGE TemplateHaskell #-}
 
 module TemplateGen.Html (
-    defaultTemplateContext
-  , renderHtmlTemplate
+    renderHtmlTemplate
   , renderHtmlUrl
 ) where
 
-import Data.Text
+import           Data.Text
 import qualified TemplateGen.PageContext as PC
-import TemplateGen.Resource
-import TemplateGen.SiteInfo
-import TemplateGen.Types
-import Text.Hamlet
-
-data Settings = Settings {
-    copyrightYear :: String,
-    copyright :: String,
-    analytics :: Maybe String
-}
-
-defaultSettings :: Settings
-defaultSettings = Settings "2016" "Seattle Area Haskell Users' Group" Nothing
-
-data Master = Master Settings
-
-data TemplateContext = TemplateContext {
-    pageTitle :: PC.PageContext -> String,
-    pc :: PC.PageContext,
-    currentRoute :: Maybe Url,
-    appSettings :: Master -> Settings,
-    appCopyrightYear :: Settings -> String,
-    appCopyright :: Settings -> String,
-    appAnalytics :: Settings -> Maybe String,
-    master :: Master
-}
-
-defaultTemplateContext :: TemplateContext
-defaultTemplateContext = TemplateContext
-    PC.title -- pageTitle
-    PC.mkPageContext { PC.title = "SeaHUG - $title$" } -- pc
-    Nothing -- currentRoute
-    (\(Master s) -> s) -- appSettings
-    copyrightYear -- appCopyrightYear
-    copyright -- appCopyright
-    analytics -- appAnalytics
-    (Master defaultSettings) -- master
+import           TemplateGen.Resource
+import           TemplateGen.Settings
+import qualified TemplateGen.SiteInfo as SI
+import qualified TemplateGen.TemplateContext as TC
+import qualified TemplateGen.Url as U
+import           TemplateGen.Url (Url(AboutR, HomeR)) -- import unqualified for TH use
+import           Text.Hamlet
 
 -- A note about URLs as handled by the site generator
 -- Internal relative URLs
@@ -57,20 +26,19 @@ defaultTemplateContext = TemplateContext
 -- Example: "//about" is converted to "/about"
 -- External absolute URLs
 -- Example: "http://foo/bar" is left as is
-renderHtmlUrl :: Show a => SiteInfo -> Url -> a -> Text
-renderHtmlUrl _ AboutR _ = "//about"    -- an internal absolute URL
-renderHtmlUrl _ HomeR _ = "//"          -- an internal absolute URL
+renderHtmlUrl :: Show a => SI.SiteInfo -> U.Url -> a -> Text
+renderHtmlUrl _ U.AboutR _ = "//about"    -- an internal absolute URL
+renderHtmlUrl _ U.HomeR _ = "//"          -- an internal absolute URL
 
 #define LAYOUT_TEMPLATE_PATH (TEMPLATE_DIR ++ "/default-layout-wrapper.hamlet")
-renderHtmlTemplate :: SiteInfo -> TemplateContext -> HtmlUrl Url
+renderHtmlTemplate :: SI.SiteInfo -> TC.TemplateContext -> HtmlUrl U.Url
 renderHtmlTemplate si tc =
     let
-        SiteInfo {..} = si
-        TemplateContext {..} = tc
+        TC.TemplateContext {..} = tc
         pageBody _ = [hamlet|\$body$
-$forall r <- siteInfoScripts
+$forall r <- SI.scripts si
     <script src=#{fullUrl r}>|]
-        pageHead _ = [hamlet|$forall r <- siteInfoStylesheets
+        pageHead _ = [hamlet|$forall r <- SI.stylesheets si
     <link rel="stylesheet" href=#{fullUrl r}>|]
     in
         $(hamletFile LAYOUT_TEMPLATE_PATH)
