@@ -18,8 +18,7 @@ source-repository head
 library
   default-language: Haskell2010
   cpp-options:      -DTEMPLATE_DIR="seattlehaskell-org/templates"
-  exposed-modules:  TemplateGen.DoIt
-  other-modules:    TemplateGen.Css
+  exposed-modules:  TemplateGen.Css
                   , TemplateGen.Hash
                   , TemplateGen.Master
                   , TemplateGen.PageContext
@@ -33,7 +32,6 @@ library
   hs-source-dirs:   src
   build-depends:    base == 4.*
                   , blaze-html
-                  , bytestring
                   , shakespeare
                   , text
                   , yesod-static
@@ -44,10 +42,13 @@ executable templategen
   main-is:          templategen.hs
   build-depends:    base == 4.*
                   , blaze-html
+                  , bytestring
                   , containers
                   , hakyll == 4.7.*
                   , seattlehaskell-org-static
                   , shakespeare
+                  , text
+                  , yesod-static
 
 executable site
   default-language: Haskell2010
