@@ -1,6 +1,6 @@
 module TemplateGen.PageContext (
     PageContext
-  , mkDefault
+  , mkPageContext
   , title
 ) where
 
@@ -8,5 +8,5 @@ data PageContext = PageContext {
     title :: String
 }
 
-mkDefault :: PageContext
-mkDefault = PageContext ""
+mkPageContext :: PageContext
+mkPageContext = PageContext ""

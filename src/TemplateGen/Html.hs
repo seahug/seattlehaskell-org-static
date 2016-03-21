@@ -42,7 +42,7 @@ data TemplateContext = TemplateContext {
 defaultTemplateContext :: TemplateContext
 defaultTemplateContext = TemplateContext
     PC.title -- pageTitle
-    PC.mkDefault { PC.title = "SeaHUG - $title$" } -- pc
+    PC.mkPageContext { PC.title = "SeaHUG - $title$" } -- pc
     Nothing -- currentRoute
     (\(Master s) -> s) -- appSettings
     copyrightYear -- appCopyrightYear
