@@ -12,7 +12,7 @@ import qualified TemplateGen.Resource as R
 import qualified TemplateGen.SiteInfo as SI
 import qualified TemplateGen.TemplateContext as TC
 import qualified TemplateGen.Url as U
-import           TemplateGen.Url (Url(AboutR, HomeR)) -- unqualified import for use in Template Haskell
+import           TemplateGen.Url (Url(AboutR, HomeR)) -- unqualified import required by Template Haskell
 import qualified Text.Hamlet as H
 import qualified Text.Lucius as L
 
