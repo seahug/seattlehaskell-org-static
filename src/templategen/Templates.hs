@@ -3,7 +3,7 @@
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE TemplateHaskell #-}
 
-module TemplateGen.Templates (
+module Templates (
     defaultCssTemplate
   , renderHtmlTemplate
 ) where

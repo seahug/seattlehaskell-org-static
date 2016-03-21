@@ -17,16 +17,13 @@ source-repository head
 
 library
   default-language: Haskell2010
-  cpp-options:      -DTEMPLATE_DIR="seattlehaskell-org/templates"
-  exposed-modules:  TemplateGen.Css
-                  , TemplateGen.Hash
+  exposed-modules:  TemplateGen.Hash
                   , TemplateGen.Master
                   , TemplateGen.PageContext
                   , TemplateGen.Resource
                   , TemplateGen.Settings
                   , TemplateGen.SiteInfo
                   , TemplateGen.TemplateContext
-                  , TemplateGen.Templates
                   , TemplateGen.Url
                   , TemplateGen.UrlString
   hs-source-dirs:   src/lib
@@ -39,6 +36,7 @@ library
 executable templategen
   default-language: Haskell2010
   ghc-options:      -threaded
+  cpp-options:      -DTEMPLATE_DIR="seattlehaskell-org/templates"
   hs-source-dirs:   src/templategen
   main-is:          Main.hs
   build-depends:    base == 4.*
