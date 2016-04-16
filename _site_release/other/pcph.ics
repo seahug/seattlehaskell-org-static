@@ -28,7 +28,7 @@ UID:20160227T191229Z-608314141@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160406T183000
 DTEND;TZID="America/Los_Angeles":20160406T203000
 SUMMARY:Parallel and concurrent programming in Haskell (1/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -43,7 +43,7 @@ UID:20160227T191229Z-464956844@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160413T183000
 DTEND;TZID="America/Los_Angeles":20160413T203000
 SUMMARY:Parallel and concurrent programming in Haskell (2/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -58,7 +58,7 @@ UID:20160227T191229Z-1223910254@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160420T183000
 DTEND;TZID="America/Los_Angeles":20160420T203000
 SUMMARY:Parallel and concurrent programming in Haskell (3/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -73,7 +73,7 @@ UID:20160227T191229Z-1653279491@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160427T183000
 DTEND;TZID="America/Los_Angeles":20160427T203000
 SUMMARY:Parallel and concurrent programming in Haskell (4/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -88,7 +88,7 @@ UID:20160227T191229Z-1751794185@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160504T183000
 DTEND;TZID="America/Los_Angeles":20160504T203000
 SUMMARY:Parallel and concurrent programming in Haskell (5/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -103,7 +103,7 @@ UID:20160227T191229Z-943109730@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160511T183000
 DTEND;TZID="America/Los_Angeles":20160511T203000
 SUMMARY:Parallel and concurrent programming in Haskell (6/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -118,7 +118,7 @@ UID:20160227T191229Z-275099107@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160518T183000
 DTEND;TZID="America/Los_Angeles":20160518T203000
 SUMMARY:Parallel and concurrent programming in Haskell (7/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -133,7 +133,7 @@ UID:20160227T191229Z-1661556885@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160525T183000
 DTEND;TZID="America/Los_Angeles":20160525T203000
 SUMMARY:Parallel and concurrent programming in Haskell (8/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -148,7 +148,7 @@ UID:20160227T191229Z-483014993@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160601T183000
 DTEND;TZID="America/Los_Angeles":20160601T203000
 SUMMARY:Parallel and concurrent programming in Haskell (9/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
@@ -163,7 +163,7 @@ UID:20160227T191229Z-1751277815@marudot.com
 DTSTART;TZID="America/Los_Angeles":20160608T183000
 DTEND;TZID="America/Los_Angeles":20160608T203000
 SUMMARY:Parallel and concurrent programming in Haskell (10/10)
-URL:http%3A%2F%2Fseattlehaskell.org%2Fpcph
+URL:http%3A%2F%2Fseattlehaskell.org%2Fcontent%2Fpcph
 DESCRIPTION:Parallel and concurrent programming in Haskell with Bartosz Milewski
 LOCATION:Facebook\, 1730 Minor Avenue\, Seattle\, WA 98101
 BEGIN:VALARM
