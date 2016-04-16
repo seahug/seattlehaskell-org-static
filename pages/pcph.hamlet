@@ -51,11 +51,8 @@ title: Parallel and concurrent programming in Haskell
         <li>
           Wednesday June 8th 2016, 6:30pm-8:30pm
   <li .list-group-item>
-    <a href="https://seahug-pcph.eventbrite.com/">
-      Register at Eventbrite
-  <li .list-group-item>
     <a href="/other/pcph.ics">
       Download iCalendar file
   <li .list-group-item>
-    <a href="https://github.com/seahug/pcph">
+    <a href="https://github.com/seahug/parconc-examples">
       View course materials on GitHub including setup instructions
