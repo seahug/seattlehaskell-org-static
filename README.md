@@ -17,6 +17,12 @@ $ script/init
 $ script/build
 ```
 
+## Run test
+
+```bash
+$ script/build -t
+```
+
 ## Update test baselines
 
 ```bash
