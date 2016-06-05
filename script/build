@@ -1,7 +1,13 @@
 #!/bin/bash
-SCRIPTPATH=$(readlink -f $0)
-SCRIPTDIR=$(dirname $SCRIPTPATH)
-APPDIR=$(dirname $SCRIPTDIR)
+set -e
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  READLINK=greadlink
+else
+  READLINK=readlink
+fi
+THISPATH=$($READLINK -f $0)
+THISDIR=$(dirname $THISPATH)
+PROJECTDIR=$(dirname $THISDIR)
 
 INVALIDOPT=0
 COPYONLY=0
@@ -42,7 +48,7 @@ if [[ "$1" != "" ]]; then
   exit 1
 fi
 
-cd $APPDIR
+cd $PROJECTDIR
 
 if [ $COPYONLY -ne 1 ]; then
   echo Cleaning

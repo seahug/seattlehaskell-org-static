@@ -1,10 +1,15 @@
 #!/bin/bash
 set -e
-SCRIPTPATH=$(readlink -f $0)
-SCRIPTDIR=$(dirname $SCRIPTPATH)
-APPDIR=$(dirname $SCRIPTDIR)
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  READLINK=greadlink
+else
+  READLINK=readlink
+fi
+THISPATH=$($READLINK -f $0)
+THISDIR=$(dirname $THISPATH)
+PROJECTDIR=$(dirname $THISDIR)
 
-cd $APPDIR
+cd $PROJECTDIR
 
 git rm -rf _site_debug/
 rm -rf _site/
