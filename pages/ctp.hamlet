@@ -42,9 +42,25 @@ title: Category theory for programmers
     <div #sessions .collapse>
       <ul .list-unstyled>
         <li>
-          Wednesday 24 August 2016, 6:30pm&ndash;9:00pm
+          Wednesday 24 August 2016, 6:30pm&ndash;9:00pm<br/>
+          Videos:
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/watch?v=I8LbkfSSR58">
+                part 1
+            <li>
+              <a href="https://www.youtube.com/watch?v=p54Hd7AmVFU">
+                part 2
         <li>
-          Wednesday 31 August 2016, 6:30pm&ndash;9:00pm
+          Wednesday 31 August 2016, 6:30pm&ndash;9:00pm<br/>
+          Videos:
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/watch?v=O2lZkr-aAqk">
+                part 1
+            <li>
+              <a href="https://www.youtube.com/watch?v=NcT7CGPICzo">
+                part 2
         <li>
           Wednesday 7 September 2016, 6:30pm&ndash;9:00pm
         <li>
