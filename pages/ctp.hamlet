@@ -42,7 +42,7 @@ title: Category theory for programmers
     <div #sessions .collapse>
       <ul .list-unstyled>
         <li>
-          Wednesday 24 August 2016, 6:30pm&ndash;9:00pm<br/>
+          Session 1: Wednesday 24 August 2016, 6:30pm&ndash;9:00pm<br/>
           Videos:&nbsp;
             <a href="https://www.youtube.com/watch?v=I8LbkfSSR58">
               part 1
@@ -50,7 +50,7 @@ title: Category theory for programmers
             <a href="https://www.youtube.com/watch?v=p54Hd7AmVFU">
               part 2
         <li>
-          Wednesday 31 August 2016, 6:30pm&ndash;9:00pm<br/>
+          Session 2: Wednesday 31 August 2016, 6:30pm&ndash;9:00pm<br/>
           Videos:&nbsp;
             <a href="https://www.youtube.com/watch?v=O2lZkr-aAqk">
               part 1
@@ -58,7 +58,7 @@ title: Category theory for programmers
             <a href="https://www.youtube.com/watch?v=NcT7CGPICzo">
               part 2
         <li>
-          Wednesday 7 September 2016, 6:30pm&ndash;9:00pm<br/>
+          Session 3: Wednesday 7 September 2016, 6:30pm&ndash;9:00pm<br/>
           Videos:&nbsp;
             <a href="https://www.youtube.com/watch?v=aZjhqkD6k6w">
               part 1
@@ -66,7 +66,7 @@ title: Category theory for programmers
             <a href="https://www.youtube.com/watch?v=i9CU4CuHADQ">
               part 2
         <li>
-          Wednesday 14 September 2016, 6:30pm&ndash;9:00pm<br/>
+          Session 4: Wednesday 14 September 2016, 6:30pm&ndash;9:00pm<br/>
           Videos:&nbsp;
             <a href="https://www.youtube.com/watch?v=zer1aFgj4aU">
               part 1
@@ -74,17 +74,23 @@ title: Category theory for programmers
             <a href="https://www.youtube.com/watch?v=Bsdl_NKbNnU">
               part 2
         <li>
-          Wednesday 21 September 2016, 6:30pm&ndash;9:00pm
+          Session 5: Wednesday 21 September 2016, 6:30pm&ndash;9:00pm<br/>
+          Videos:&nbsp;
+            <a href="https://www.youtube.com/watch?v=LkIRsNj9T-8">
+              part 1
+            &nbsp;
+            <a href="https://www.youtube.com/watch?v=w1WMykh7AxA">
+              part 2
         <li>
-          Wednesday 28 September 2016, 6:30pm&ndash;9:00pm
+          Session 6: Wednesday 28 September 2016, 6:30pm&ndash;9:00pm
         <li>
-          Wednesday 5 October 2016, 6:30pm&ndash;9:00pm
+          Session 7: Wednesday 5 October 2016, 6:30pm&ndash;9:00pm
         <li>
-          Wednesday 12 October 2016, 6:30pm&ndash;9:00pm
+          Session 8: Wednesday 12 October 2016, 6:30pm&ndash;9:00pm
         <li>
-          Wednesday 19 October 2016, 6:30pm&ndash;9:00pm
+          Session 9: Wednesday 19 October 2016, 6:30pm&ndash;9:00pm
         <li>
-          Wednesday 26 October 2016, 6:30pm&ndash;9:00pm
+          Session 10: Wednesday 26 October 2016, 6:30pm&ndash;9:00pm
   <li .list-group-item>
     <a href="/other/ctp.ics">
       Download iCalendar file
