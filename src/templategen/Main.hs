@@ -72,7 +72,7 @@ mkDefaultCssResource = do
 generateHtmlTemplateFile :: SI.SiteInfo -> IO ()
 generateHtmlTemplateFile si = do
     let
-        settings = S.Settings "2016" "Seattle Area Haskell Users' Group" Nothing
+        settings = S.Settings "2016-2017" "Seattle Area Haskell Users' Group" Nothing
         pageCtx = PC.mkPageContext { PC.title = "SeaHUG - $title$" }
         templateCtx = TC.mkTemplateContext settings pageCtx
         html = T.renderHtmlTemplate si templateCtx (renderHtmlUrl si)
