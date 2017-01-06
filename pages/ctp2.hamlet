@@ -1,0 +1,70 @@
+---
+title: Category theory for programmers (part 2)
+---
+<header>
+  <h1>
+    \$title$
+  <p>
+    Instructor:
+    <a href="http://bartoszmilewski.com/">
+      Bartosz Milewski
+<p>
+  <strong>
+    This is a 10-week in-person course taking place in Seattle, WA, United
+    States.
+<p>
+  This class will follow and expand upon Bartosz Milewski's
+  <a href="https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">
+    blog.
+  There will be lots of diagrams and programming on the whiteboard!
+<p>
+  In Bartosz's own words:
+<blockquote>
+  I got the crazy idea, around 2014, to write a book about category theory for
+  programmers. Mind you, not computer scientists but
+  programmers&mdash;engineers rather than scientists. The idea evolved into a
+  blog, and now into a course. I can't deny that there is a huge gap between
+  science and engineering, because I have worked on both sides of the divide.
+  But I've always felt a very strong compulsion to explain things. I have
+  tremendous admiration for Richard Feynman who was the master of simple
+  explanations. I know I'm no Feynman, but I will try my best.
+<p>
+  To follow the course you don't need to know a lot of computer science or
+  mathematics but you will need to be an experienced programmer. You should
+  know what generic programming and polymorphism are.
+<ul .list-group>
+  <li .list-group-item>
+    The course starts Wednesday D MMM 2017 and will consist of up to ten
+    sessions, each of which will consist roughly of two 45-minute halves with a
+    break in between<br/>
+    <button data-toggle="collapse" data-target="#sessions">
+      Show/hide all dates
+    <div #sessions .collapse>
+      <ul .list-unstyled>
+        <li>
+          Session 1: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 2: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 3: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 4: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 5: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 6: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 7: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 8: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 9: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+        <li>
+          Session 10: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+  <li .list-group-item>
+    <a href="/other/ctp2.ics">
+      Download iCalendar file
+  <li .list-group-item>
+    Organized by
+    <a href="http://blog.rcook.org/">
+      Richard Cook
