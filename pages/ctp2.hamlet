@@ -34,7 +34,7 @@ title: Category theory for programmers (part 2)
   know what generic programming and polymorphism are.
 <ul .list-group>
   <li .list-group-item>
-    The course starts Wednesday D MMM 2017 and will consist of up to ten
+    The course starts Wednesday 15 February 2017 and will consist of up to ten
     sessions, each of which will consist roughly of two 45-minute halves with a
     break in between<br/>
     <button data-toggle="collapse" data-target="#sessions">
@@ -42,25 +42,25 @@ title: Category theory for programmers (part 2)
     <div #sessions .collapse>
       <ul .list-unstyled>
         <li>
-          Session 1: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 1: Wednesday 15 February 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 2: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 2: Wednesday 22 February 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 3: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 3: Wednesday 1 March 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 4: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 4: Wednesday 8 March 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 5: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 5: Wednesday 15 March 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 6: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 6: Wednesday 22 March 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 7: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 7: Wednesday 29 March 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 8: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 8: Wednesday 5 April 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 9: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 9: Wednesday 12 April 2017, 6:30pm&ndash;9:00pm
         <li>
-          Session 10: Wednesday D MMM 2017, 6:30pm&ndash;9:00pm
+          Session 10: Wednesday 19 April 2017, 6:30pm&ndash;9:00pm
   <li .list-group-item>
     <a href="/other/ctp2.ics">
       Download iCalendar file
